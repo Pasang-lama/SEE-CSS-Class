@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slider</title>
+    <!-- css link GARNAY  -->
+    <link rel="stylesheet" href="css/owl.carousel.min.css" />
+  </head>
+  <body>
+    <div class="owl-carousel">
+      <figure>
+        <img src="images/banner-2.avif" alt="">
+      </figure>
+      <figure>
+        <img src="images/banner.avif" alt="">
+      </figure>
+    </div>
+    <!-- jquery link  -->
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel").owlCarousel({
+            items: 3,
+        });
+      });
+    </script>
+  </body>
+</html>

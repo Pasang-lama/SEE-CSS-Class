@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mega menu</title>
+    <style>
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+      header ul {
+        list-style: none;
+      }
+      header ul li {
+        display: inline-block;
+        margin-right: 50px;
+        position: relative;
+      }
+      header ul li ul {
+        background-color: gray;
+        padding: 10px;
+        position: absolute;
+        display: none;
+        left: 0px;
+      }
+      header ul li ul li {
+        display: block;
+        padding-bottom: 10px;
+        margin-right: 0px;
+      }
+      header ul li:hover ul {
+        display: block;
+      }
+      header ul li:hover ul li ul {
+        display: none;
+      }
+      header ul li  ul li ul{
+        position: absolute;
+        left: 100%;
+        display: none;
+      }
+      header ul li ul li:hover ul{
+        display: block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="">Home</a></li>
+          <li><a href="">About us</a></li>
+          <li><a href="">Services</a></li>
+          <li>
+            <a href="">Media coverage</a>
+            <ul>
+              <li><a href="">News </a></li>
+              <li><a href="">Articles </a></li>
+              <li>
+                <a href="">Gallery </a>
+                <ul>
+                  <li><a href="">Photo</a></li>
+                  <li><a href="">Video</a></li>
+                </ul>
+              </li>
+              <li><a href="">Blogs </a></li>
+            </ul>
+          </li>
+          <li><a href="">Contact us</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
+</html>
