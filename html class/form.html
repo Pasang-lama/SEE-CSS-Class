@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in html</title>
+  </head>
+  <body>
+    <form>
+      <!-- type input  -->
+      <label for="username">Name:</label> <br />
+      <input type="text" id="username" placeholder="Enter your name" required />
+      <br />
+
+      <!-- type number  -->
+      <label for="age">Age:</label> <br />
+      <input
+        disabled
+        type="number"
+        id="age"
+        placeholder="Enter your Age"
+        min="5"
+        max="18"
+      />
+      <br />
+
+      <label for="email">Email:</label> <br />
+      <input type="email" id="email" placeholder="Enter your email" /> <br />
+
+      <!-- select  -->
+
+      <label for="Course">Select Course </label>
+      <select id="Course">
+        <option>Web Design</option>
+        <option>JAVA</option>
+        <option disabled>C programming</option>
+        <option selected>C+</option>
+      </select>
+      <br />
+
+      <!-- radio button  -->
+      <input type="radio" name="gender" id="male" />
+      <label for="male">Male</label>
+      <input type="radio" name="gender" id="female" />
+      <label for="female">female</label>
+      <input type="radio" name="gender" id="other" />
+      <label for="other">Other</label> <br />
+
+      <input type="checkbox" name="" id="cprogramming" />
+      <label for="cprogramming"> C programming</label>
+      <input type="checkbox" name="" id="java" />
+      <label for="java"> Java</label>
+      <input type="checkbox" name="" id="web" /> <label for="web"> Web</label>
+      <br />
+
+      <label for="message">Message</label> <br />
+      <textarea name="message" id="message" cols="30" rows="10"></textarea>
+
+      <button type="submit">Submit Now</button>
+
+
+
+      <!-- input type 
+      text
+      number 
+      email
+      passoword
+      date
+      time
+      file
+      course
+      radio button
+      checkbox,
+      select
+      textarea   
+      required, min, max, disable, placeholder, selected
+      -->
+
+
+    </form>
+  </body>
+</html>
